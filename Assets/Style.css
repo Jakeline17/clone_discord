@@ -1,0 +1,157 @@
+@import url(reset.css);
+
+body {
+    font-family:Open Sans;
+    overflow-x: hidden;
+}
+.inicio{
+    width:100%;
+    background-image: url(fotos/Header\ Background\ \(1\).png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;  
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+header h1{
+    max-width: 350px;
+    padding:1.5rem;
+    text-align: center;
+    font-family:'Luckiest Guy', cursive;
+    font-weight: 400;
+    font-size: 56px;
+    color: #ffffff;
+}
+header p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 60%;
+    margin: 0 auto; 
+   
+}
+.button{
+    padding: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap:1rem;
+    
+}
+#botao1, #botao2 {
+    font-size: 1rem;
+    border-radius: 35px;
+    padding: 20px;
+    border: none;
+}
+
+#botao1 {
+    background-color: #ffffff;
+}
+
+#botao2 {
+    background-color: black;
+    color: #ffffff;
+}
+
+.container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+.itens, .itens2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    width: 100%;
+}
+.itens img, .itens2 img{
+    max-width: 100%;
+    height: auto;
+}
+
+.conteudo {
+    max-width:40%;
+    flex: auto;
+    padding: 1rem;
+}
+.conteudo h3{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    color: #23272A;
+    font-size: 2.5rem;
+}
+.conteudo p{
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+
+.info{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+    padding: 2rem;
+    justify-items: center;
+
+}
+.info h3{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    color: #23272A;
+    font-size: 2.5rem;
+    font-family: 'Luckiest Guy', cursive;
+    
+}
+.info p{
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+.DiscordProfiles{
+    width: 100%;
+    text-align: center;  
+}
+footer{
+    margin: auto;
+    background-color: #23272A;
+    text-align: center; 
+    padding: 1rem;  
+}
+footer img{
+    width: 100px;
+}
+@media screen and (max-width:1200px) {
+    .button{
+        flex-direction:column;
+        padding: 20px;
+        
+    }   
+    .conteudo h3{
+        font-size: 1.5rem;
+    }
+    .container{
+        flex-direction:column;
+
+    }
+    .conteudo{
+        max-width: 100%;
+        text-align: center;
+    }
+}
